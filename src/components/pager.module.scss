@@ -1,0 +1,47 @@
+.pager-container {
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.pager__ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+
+        a {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+}
+
+.pager__active {
+    border: 1.2px solid rgba(0, 26, 255, 0.7);
+    color: rgba(0, 26, 255, 0.9);
+    // margin-left: 0.1em;
+    // margin-right: 0.1em;
+    padding-bottom: 0.4em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.4em;
+}
+.pager__default {
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    color: black;
+    padding-bottom: 0.4em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.4em;
+}
+.pager__prev {
+    color: black;
+    margin-right: 1em;
+}
+.pager__next {
+    color: black;
+    margin-left: 1em;
+
+}
