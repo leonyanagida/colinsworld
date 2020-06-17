@@ -120,7 +120,7 @@ const BlogList = ({data, pageContext}) => {
                                 onChange={searchChangeHandler}
                             />
                             <button className={blogListModule["blog-list__searchform__button__mobile"]} type="submit">
-                                {isLoading ? (<img className={blogListModule["blog-list__loadersvg"]} src={loaderIcon} /> ) : (<img className={blogListModule["blog-list__searchsvg"]} src={searchIcon} alt="search icon svg" />)}
+                                {isLoading ? (<img className={blogListModule["blog-list__loadersvg"]} src={loaderIcon} alt="Loader" /> ) : (<img className={blogListModule["blog-list__searchsvg"]} src={searchIcon} alt="search icon svg" />)}
                             </button>                        
                         </form>
                     </div>
@@ -137,7 +137,8 @@ const BlogList = ({data, pageContext}) => {
                                                     <Link to={`/blog/${a.node.slug}`}>
                                                         <img 
                                                             className={blogListModule["blog-list__img"]}
-                                                            src={a.node.media[0].fluid.src ? a.node.media[0].fluid.src : data.blogger.childImageSharp.fixed} 
+                                                            src={a.node.media[0].fluid.src ? a.node.media[0].fluid.src : data.blogger.childImageSharp.fixed}
+                                                            alt="Blog destination"
                                                         />
                                                     </Link>
                                                 </div>
@@ -176,7 +177,8 @@ const BlogList = ({data, pageContext}) => {
                                                         <Link to={`/blog/${edge.node.slug}`}>
                                                             <img 
                                                                 className={blogListModule["blog-list__img"]}
-                                                                src={edge.node.media[0].fluid.src} 
+                                                                src={edge.node.media[0].fluid.src}
+                                                                alt="Blog preview"
                                                             />
                                                         </Link>
                                                     </div>
@@ -226,7 +228,7 @@ const BlogList = ({data, pageContext}) => {
                                 onChange={searchChangeHandler}
                             />
                             <button className={blogListModule["blog-list__searchform__button"]} type="submit">
-                                {isLoading ? (<img className={blogListModule["blog-list__loadersvg"]} src={loaderIcon} /> ) : (<img className={blogListModule["blog-list__searchsvg"]} src={searchIcon} alt="search icon svg" />)}
+                                {isLoading ? (<img className={blogListModule["blog-list__loadersvg"]} src={loaderIcon} alt="Loader" /> ) : (<img className={blogListModule["blog-list__searchsvg"]} src={searchIcon} alt="search icon svg" />)}
                             </button>
                         </form>
                     </div>
@@ -237,7 +239,7 @@ const BlogList = ({data, pageContext}) => {
                         </div>
                         <hr />
                         <div>
-                            <Img fixed={data.switzerland.childImageSharp.fixed} />
+                            <Img fixed={data.switzerland.childImageSharp.fixed} alt="Switzerland" />
                             <p className={blogListModule["blog-list__awardtitle"]}>The Award For The Best Place To Travel in 2019</p>
                             <p className={blogListModule["blog-list__awardtext"]}>After over a decade of traveling around the world and going trekking on six continents.</p>
                             <p className={blogListModule["blog-list__learnmore"]}>Learn More &#10148;</p>
