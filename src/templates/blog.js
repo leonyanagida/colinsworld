@@ -1,53 +1,17 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import {
-    EmailShareButton,
     FacebookShareButton,
-    InstapaperShareButton,
-    LineShareButton,
-    LinkedinShareButton,
-    LivejournalShareButton,
-    MailruShareButton,
-    OKShareButton,
     PinterestShareButton,
-    PocketShareButton,
-    RedditShareButton,
-    TelegramShareButton,
-    TumblrShareButton,
     TwitterShareButton,
-    ViberShareButton,
-    VKShareButton,
-    WhatsappShareButton,
-    WorkplaceShareButton,
-    EmailIcon,
     FacebookIcon,
-    InstapaperIcon,
-    LineIcon,
-    LinkedinIcon,
-    LivejournalIcon,
-    MailruIcon,
-    OKIcon,
     PinterestIcon,
-    PocketIcon,
-    RedditIcon,
-    TelegramIcon,
-    TumblrIcon,
     TwitterIcon,
-    ViberIcon,
-    VKIcon,
-    WeiboIcon,
-    WhatsappIcon,
   } from "react-share"
 
-import twitterLogo from "../images/twitter.svg"
-import facebookLogo from "../images/facebook-logo.svg"
-import pinterestLogo from "../images/pinterest-social-logo.svg"
-
 import Layout from "../components/layout"
-import Pager from "../components/pager"
 import SEO from "../components/seo"
 
 import blogTemplateModule from "./blog.module.scss"
@@ -93,7 +57,7 @@ const Blog = props => {
                 return (
                     <div className={blogTemplateModule["blogtemplate__embedded"]}>
                         <h3>{embeddedTitle}</h3>
-                        <img src={embeddedImg} />
+                        <img src={embeddedImg} alt="Blog preview" />
                         {documentToReactComponents(embeddedBody)}
                     </div>
                 )

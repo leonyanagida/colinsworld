@@ -313,7 +313,7 @@ const IndexPage = () => {
 					{images.map(img => (
 						<div key={img.id}>
 							<h2 className={indexModule["index-hero__text"]}>{img.text}</h2>
-							<GalleryImage className={indexModule["index-flex__box__img"]} objectFit="contain" key={img.src} src={img.src} />
+							<GalleryImage className={indexModule["index-flex__box__img"]} objectFit="contain" key={img.src} src={img.src} alt="Travel Destination Gallery" />
 						</div>
 					))}
 				</Gallery>
@@ -325,7 +325,8 @@ const IndexPage = () => {
 						<Link to={`/blog/budget%20friendly%20countries`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
-								fluid={data.philippines.childImageSharp.fluid} 
+								fluid={data.philippines.childImageSharp.fluid}
+								alt="Philippines"
 							/>
 						</Link>
 					</div>
@@ -334,7 +335,8 @@ const IndexPage = () => {
 						<Link to={`/blog/new%20york%20new%20york%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
-								fluid={data.newyork.childImageSharp.fluid} 
+								fluid={data.newyork.childImageSharp.fluid}
+								alt="New York"
 							/>
 						</Link>
 					</div>
@@ -343,7 +345,8 @@ const IndexPage = () => {
 						<Link to={`/blog/mexico%20city%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
-								fluid={data.mexicocity.childImageSharp.fluid} 
+								fluid={data.mexicocity.childImageSharp.fluid}
+								alt="Mexico City"
 							/>
 						</Link>
 					</div>
@@ -354,7 +357,8 @@ const IndexPage = () => {
 						<Link to={`/blog/safest%20countries%20for%20travel`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
-								fluid={data.indonesia.childImageSharp.fluid} 
+								fluid={data.indonesia.childImageSharp.fluid}
+								alt="Indonesia"
 							/>
 						</Link>
 					</div>
@@ -363,7 +367,8 @@ const IndexPage = () => {
 						<Link to={`/blog/top%20destinations%20this%20year`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
-								fluid={data.staubbachfalls.childImageSharp.fluid} 
+								fluid={data.staubbachfalls.childImageSharp.fluid}
+								alt="Staubbach Falls"
 							/>
 						</Link>
 					</div>
@@ -376,7 +381,7 @@ const IndexPage = () => {
 					<h3>Amalfi Coast, Italy</h3>
 					<div className={indexModule["index-award__imgcont__mobile"]}>
 						<p className={indexModule["index-award__img__text"]}>Village of Positano</p>
-						<Img className={indexModule["index-award__img__mobile"]} fluid={data.amalficoast.childImageSharp.fluid} />
+						<Img className={indexModule["index-award__img__mobile"]} fluid={data.amalficoast.childImageSharp.fluid} alt="Amalfi Coast" />
 					</div>
 					<p className={indexModule["index-award__maintext"]}>
 					Italy's Amalfi Coast boasts a classic Mediterranean landscape, a sensual blend of both natural and cultural wonders. The breathtaking terrain includes dramatic coastline topography scattered with terraced vineyards, orchards, and pastures—often with enchanting views of the vibrant waters below.
@@ -404,7 +409,7 @@ const IndexPage = () => {
 				<div className={indexModule["index-award__imgcont__desktop"]}>
 					<Link to="/blog/Amalfi%20Coast%20Italy">
 						<div className={indexModule["index-award__imgcont__text"]}>Village of Positano</div>
-						<Img className={indexModule["index-award__img__desktop"]} fluid={data.amalficoast.childImageSharp.fluid} />
+						<Img className={indexModule["index-award__img__desktop"]} fluid={data.amalficoast.childImageSharp.fluid} alt="Amalfi Coast" />
 					</Link>
 				</div>
 			</div>
@@ -416,7 +421,7 @@ const IndexPage = () => {
 					<div className={indexModule["index-recent__boxcontainer"]}>
 						<div className={indexModule["index-recent__box"]}>
 							<Link to="/blog/%20winterthur%20switzerland%20travel%20guide">
-								<Img className={indexModule["index-recent__img"]} fluid={data.switzerland.childImageSharp.fluid} />
+								<Img className={indexModule["index-recent__img"]} fluid={data.switzerland.childImageSharp.fluid} alt="Switzerland" />
 							</Link>
 							<div className={indexModule["index-recent__star"]}>
 								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -432,7 +437,7 @@ const IndexPage = () => {
 						</div>
 						<div className={indexModule["index-recent__box"]}>
 							<Link to="/blog/greenland%20travel%20guide">
-								<Img className={indexModule["index-recent__img"]} fluid={data.greenland.childImageSharp.fluid} />
+								<Img className={indexModule["index-recent__img"]} fluid={data.greenland.childImageSharp.fluid} alt="Greenland" />
 							</Link>
 							<div className={indexModule["index-recent__star"]}>
 								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -448,7 +453,7 @@ const IndexPage = () => {
 						</div>
 						<div className={indexModule["index-recent__box"]}>
 							<Link to="/blog/vancouver%20canada%20travel%20guide">
-								<Img className={indexModule["index-recent__img"]} fluid={data.vancouver.childImageSharp.fluid} />
+								<Img className={indexModule["index-recent__img"]} fluid={data.vancouver.childImageSharp.fluid} alt="Vancouver" />
 							</Link>
 							<div className={indexModule["index-recent__star"]}>
 								<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
@@ -493,7 +498,7 @@ const IndexPage = () => {
 						{imagesRecommendations.map(img => (
 							<div key={img.id}>
 								<h2 className={indexModule["index-recent__recommendations__gallery__text"]}>{img.text}</h2>
-								<GalleryImage className={indexModule["index-flex__box__img"]} key={img.src} src={img.src} />
+								<GalleryImage className={indexModule["index-flex__box__img"]} key={img.src} src={img.src} alt="Gallery Travel Destinations" />
 							</div>
 						))}
 					</Gallery>
@@ -502,31 +507,31 @@ const IndexPage = () => {
 					<div className={indexModule["index-recent__recommendations__gallery-d__box"]}>
 						<h1 className={indexModule["index-recent__recommendations__gallery-d__title"]}>Tokyo, Japan</h1>
 						<Link to={`/blog/tokyo%20travel%20guide`}>
-							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.tokyo2.childImageSharp.fluid} />
+							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.tokyo2.childImageSharp.fluid} alt="Tokyo" />
 						</Link>
 					</div>
 					<div className={indexModule["index-recent__recommendations__gallery-d__box"]}>
 						<h1 className={indexModule["index-recent__recommendations__gallery-d__title"]}>Florence, Italy</h1>
 						<Link to={`/blog/florence%20italy%20travel%20guide`}>
-							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.florence.childImageSharp.fluid} />
+							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.florence.childImageSharp.fluid} alt="Florence Italy" />
 						</Link>
 					</div>
 					<div className={indexModule["index-recent__recommendations__gallery-d__box"]}>
 						<h1 className={indexModule["index-recent__recommendations__gallery-d__title"]}>Bangkok, Thailand</h1>
 						<Link to={`/blog/bangkok%20thailand%20travel%20guide`}>
-							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.bangkok.childImageSharp.fluid} />
+							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.bangkok.childImageSharp.fluid} alt="Bangkok" />
 						</Link>
 					</div>
 					<div className={indexModule["index-recent__recommendations__gallery-d__box"]}>
 						<h1 className={indexModule["index-recent__recommendations__gallery-d__title"]}>Hanoi, Vietnam</h1>
 						<Link to={`/blog/hoi%20an%20vietnam%20travel%20guide`}>
-							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.hanoi.childImageSharp.fluid} />
+							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.hanoi.childImageSharp.fluid} alt="Hanoi" />
 						</Link>
 					</div>
 					<div className={indexModule["index-recent__recommendations__gallery-d__box"]}>
 						<h1 className={indexModule["index-recent__recommendations__gallery-d__title"]}>Vienna, Austria</h1>
 						<Link to={`/blog/vienna%20austria%20travel%20guide`}>
-							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.vienna.childImageSharp.fluid} />
+							<Img className={indexModule["index-recent__recommendations__gallery-d__img"]} fluid={data.vienna.childImageSharp.fluid} alt="Vienna" />
 						</Link>
 					</div>
 				</div>
@@ -545,7 +550,8 @@ const IndexPage = () => {
 						<Link to={`/blog/new%20york%20new%20york%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-weekend-d__img"]} 
-								fluid={data.indonesia.childImageSharp.fluid} 
+								fluid={data.newyork.childImageSharp.fluid}
+								alt="New York"
 							/>
 						</Link>
 					</div>
@@ -557,7 +563,8 @@ const IndexPage = () => {
 						<Link to={`/blog/new%20orleans%20louisiana%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-weekend-d__img"]} 
-								fluid={data.newyork.childImageSharp.fluid}
+								fluid={data.indonesia.childImageSharp.fluid}
+								alt="Louisiana"
 							/>
 						</Link>
 					</div>
@@ -569,7 +576,8 @@ const IndexPage = () => {
 						<Link to={`/blog/charleston%20south%20carolina%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-weekend-d__img"]} 
-								fluid={data.southcarolina.childImageSharp.fluid} 
+								fluid={data.southcarolina.childImageSharp.fluid}
+								alt="South Carolina"
 							/>
 						</Link>
 					</div>
@@ -581,7 +589,8 @@ const IndexPage = () => {
 						<Link to={`/blog/st%20louis%20missouri%20travel%20guide`}>
 							<Img 
 								className={indexModule["index-weekend-d__img"]} 
-								fluid={data.missouri.childImageSharp.fluid} 
+								fluid={data.missouri.childImageSharp.fluid}
+								alt="Missouri"
 							/>
 						</Link>
 					</div>
