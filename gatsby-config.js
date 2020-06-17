@@ -1,6 +1,9 @@
 const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types')
+let activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || `development`
+
 require(`dotenv`).config({
-  path: `.env`,
+  path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {

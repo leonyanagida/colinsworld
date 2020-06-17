@@ -36,7 +36,7 @@
     "react-share": "^4.0.1"
   },
   "devDependencies": {
-    "env-cmd": "^10.0.1",
+    "env-cmd": "^10.1.0",
     "prettier": "^2.0.5"
   },
   "keywords": [
