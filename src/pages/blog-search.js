@@ -96,7 +96,8 @@ const BlogSearch = ({data, pageContext}) => {
                                     <Link to={`/blog/${a.node.slug}`}>
                                         <img 
                                             className={blogListModule["blog-list__img"]}
-                                            src={a.node.media[0].fluid.src ? a.node.media[0].fluid.src : data.blogger.childImageSharp.fixed} 
+                                            src={a.node.media[0].fluid.src ? a.node.media[0].fluid.src : data.blogger.childImageSharp.fixed}
+                                            alt="Search"
                                         />
                                     </Link>
                                 </div>
