@@ -1,4 +1,7 @@
 const { BLOCKS, MARKS, INLINES } = require('@contentful/rich-text-types')
+require(`dotenv`).config({
+  path: `.env`,
+})
 
 module.exports = {
   siteMetadata: {
