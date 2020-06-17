@@ -360,7 +360,7 @@ const IndexPage = () => {
 					</div>
 					<div className={indexModule["index-top__gallery__rightbox"]}>
 						<h1 className={indexModule["index-top__gallery__title5"]}>Top Destinations To Visit in 2020</h1>
-						<Link to={`/blog/top%20destinations%202020`}>
+						<Link to={`/blog/top%20destinations%20this%20year`}>
 							<Img 
 								className={indexModule["index-top__gallery__img"]}
 								fluid={data.staubbachfalls.childImageSharp.fluid} 
