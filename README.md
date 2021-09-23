@@ -4,7 +4,7 @@ Colin's World is a blogging site created using Gatsby.js and Contentful.
 
 Gatsby was used for its fast performance when serving files to the client. This is especially useful for blogging sites that mostly serve static pages. The Contentful API was used to deliver the blog data to the website.
 
-View Live Demo: [Colin's World](https://build-939bb09c-aed9-410e-b1ea-f92407c204b7.gtsb.io/)
+View Live Demo: [Colin's World](https://colinsworld.gtsb.io/)
 
 ## ✏️ Credit to the Authors
 
